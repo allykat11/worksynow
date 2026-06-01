@@ -1,8 +1,7 @@
 @font-face {
   font-family: 'DM Sans';
   src: url('../fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf') format('woff2');
-  /*font-weight: normal;
-  font-style: normal;*/
+
 }
 
 html {
@@ -29,7 +28,7 @@ html {
   z-index: 10;
 }
 
-/* LEFT */
+
 .logo {
   justify-self: start;
   display: flex;
@@ -44,9 +43,9 @@ html {
   transition: 0.2s;
 }
 
-/* IMAGE INSIDE LOGO */
+
 .logo img {
-  height: 28px;   /* adjust size as needed */
+  height: 28px;  
   width: auto;
   display: block;
   max-height: 100%;
@@ -59,7 +58,7 @@ html {
 
 
 .logo:hover img {
-  filter: brightness(0); /* turns logo dark on hover (optional but nice) */
+  filter: brightness(0); 
 }
 
 /* CENTER - THE "ONE LONG BUTTON" */
@@ -71,11 +70,11 @@ html {
   padding: 8px 16px;
   border: 1px solid #FFEBAE;
   border-radius: 8px;
-  background: rgba(255,235,174,0.3); /* subtle glass look */
+  background: rgba(255,235,174,0.3);
   backdrop-filter: blur(6px);
 }
 
-/* LINKS INSIDE PILL */
+
 .nav-pill a {
   text-decoration: none;
   color: #FFEBAE;
@@ -90,7 +89,7 @@ html {
   border-radius: 4px;
 }
 
-/* RIGHT */
+
 .cta-btn {
   background: rgba(255,235,174,0.3);
   justify-self: end;
@@ -107,8 +106,6 @@ html {
   color: black;
 }
 
-/* HERO SECTION */
-/* HERO SECTION */
 .hero {
   position: relative;
   height: 100vh;
@@ -118,7 +115,7 @@ html {
   align-items: flex-end;
 }
 
-/* VIDEO */
+
 .hero-video {
   position: absolute;
   top: 0;
@@ -132,7 +129,7 @@ html {
   z-index: 0;
 }
 
-/* DARK OVERLAY */
+
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -142,7 +139,7 @@ html {
   z-index: 1;
 }
 
-/* CONTENT */
+
 .hero-content {
   position: relative;
   z-index: 2;
@@ -166,14 +163,14 @@ html {
   line-height: 1.5;
 }
 
-/* BUTTON CONTAINER */
+
 .hero-buttons {
   margin-top: 20px;
   display: flex;
   gap: 15px;
 }
 
-/* BASE BUTTON STYLE */
+
 .btn {
   padding: 12px 20px;
   text-decoration: none;
@@ -184,19 +181,19 @@ html {
   transition: 0.2s ease;
 }
 
-/* PRIMARY BUTTON */
+
 .btn.primary {
   background: #FFEBAE;
   color: black;
 }
 
-/* SECONDARY BUTTON */
+
 .btn.secondary {
   background: rgba(255,235,174,0.3);
   color: #FFEBAE;
 }
 
-/* HOVER EFFECT */
+
 .btn.primary:hover {
   background: white;
   color: black;
@@ -214,7 +211,7 @@ html {
   padding: 120px 50px 80px;
 }
 
-/* MAIN LAYOUT */
+
 .mission-content {
   max-width: 1200px;
 
@@ -223,21 +220,21 @@ html {
   margin-bottom: 60px;
 }
 
-/* LEFT LABEL */
+
 .mission-label {
   padding-top: 12px;
-  min-width: 150px; /* keeps spacing consistent */
+  min-width: 150px; 
   font-size: 20px;
   letter-spacing: 1px;
 }
 
-/* RIGHT TEXT BLOCK */
+
 .mission-text {
   display: flex;
   flex-direction: column;
 }
 
-/* spacing between heading + paragraph */
+
 .mission-text h1 {
   font-size: 48px;
   font-weight: 300;
@@ -256,8 +253,8 @@ html {
 
 .feature-card img {
   width: 100%;
-  height: 500px;      /* reduce this from 200px or more */
-  object-fit: cover;  /* keeps image cropped nicely */
+  height: 500px;      
+  object-fit: cover;  
   border-radius: 8px;
   margin-bottom: 12px;
 }
@@ -337,7 +334,7 @@ html {
   gap: 60px;
 }
 
-/* LEFT SIDE */
+
 .problem-text {
   flex: 1;
   max-width: 600px;
@@ -366,7 +363,7 @@ html {
   color: white;
 }
 
-/* RIGHT GRID */
+
 .problem-grid {
   flex: 1;
   display: grid;
@@ -374,7 +371,7 @@ html {
   gap: 20px;
 }
 
-/* EACH ITEM */
+
 /* =========================================
    PROBLEM + SOLUTION CARDS
 ========================================= */
@@ -405,7 +402,6 @@ html {
 }
 
 
-/* HOVER EFFECT */
 .problem-item:hover,
 .solution-item:hover {
 
@@ -421,7 +417,7 @@ html {
 }
 
 
-/* OPTIONAL: ICON ANIMATION */
+
 .problem-item .icon img,
 .solution-item .icon img {
 
@@ -596,7 +592,7 @@ html {
   padding-top: 150px;
 }
 
-/* BASE BUTTON STYLE */
+
 .payoff-btn {
   padding: 12px 20px;
   text-decoration: none;
@@ -690,7 +686,6 @@ html {
 
 @media (max-width: 1024px) {
 
-/* NAVBAR */
 .navbar {
   grid-template-columns: 1fr;
   gap: 20px;
@@ -708,7 +703,6 @@ html {
   justify-content: center;
 }
 
-/* HERO */
 .hero-content {
   left: 30px;
   bottom: 60px;
@@ -724,7 +718,7 @@ html {
   font-size: 22px;
 }
 
-/* MISSION */
+
 .mission {
   height: auto;
   padding: 100px 30px;
@@ -750,7 +744,7 @@ html {
   height: 400px;
 }
 
-/* PROBLEM + SOLUTION */
+
 .problem {
   height: auto;
   padding: 120px 30px;
@@ -781,7 +775,7 @@ html {
   font-size: 22px;
 }
 
-/* PAYOFF */
+
 .payoff {
   height: auto;
   padding-bottom: 80px;
@@ -805,7 +799,7 @@ html {
   padding-top: 80px;
 }
 
-/* FOOTER */
+
 .footer {
     padding: 30px 20px;
   }
@@ -818,21 +812,21 @@ html {
     max-width: 100%;
   }
 
-  /* Brand stays strong but compact */
+
   .footer-brand {
     font-size: 18px;
   }
 
-  /* Stack text naturally (no forced single-line) */
+
   .footer-text,
   .footer-tagline {
     font-size: 12px;
     opacity: 0.65;
-    white-space: normal; /* important */
+    white-space: normal; 
     line-height: 1.4;
   }
 
-  /* Links become wrap-friendly row */
+
   .footer-links {
     flex-wrap: wrap;
     gap: 12px;
@@ -842,7 +836,6 @@ html {
     font-size: 13px;
   }
 
-  /* CTA becomes full-width pill (feels premium on mobile) */
   .footer-cta {
     width: 100%;
   }
@@ -865,12 +858,10 @@ html {
 
 @media (max-width: 768px) {
 
-/* GLOBAL */
 body {
   overflow-x: hidden;
 }
 
-/* NAVBAR */
 .navbar {
   position: absolute;
   padding: 20px;
@@ -894,7 +885,7 @@ body {
   text-align: center;
 }
 
-/* HERO */
+
 .hero {
   height: 100vh;
 }
@@ -926,7 +917,7 @@ body {
   text-align: center;
 }
 
-/* MISSION */
+
 .mission {
   padding: 80px 20px;
 }
@@ -963,7 +954,7 @@ body {
   padding-right: 0;
 }
 
-/* PROBLEM */
+
 .problem {
   padding: 100px 20px;
   background-attachment: scroll;
@@ -995,7 +986,7 @@ body {
   font-size: 16px;
 }
 
-/* PAYOFF */
+
 .payoff-text {
   padding: 50px 20px 0;
 }
@@ -1046,7 +1037,7 @@ body {
    MOBILE + TABLET BURGER MENU ONLY
 ========================================================= */
 
-/* HIDDEN ON DESKTOP */
+
 .menu-toggle,
 .mobile-menu {
   display: none;
@@ -1059,13 +1050,13 @@ body {
 
 @media (max-width: 1024px) {
 
-/* HIDE DESKTOP NAV */
+
 .nav-pill,
 .cta-btn {
   display: none;
 }
 
-/* KEEP NAVBAR CLEAN */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -1074,7 +1065,7 @@ body {
   padding: 20px 24px;
 }
 
-/* SHOW BURGER */
+
 .menu-toggle {
   position: fixed;
   top: 20px;
@@ -1099,7 +1090,7 @@ body {
   z-index: 2000;
 }
 
-/* BURGER LINES */
+
 .menu-toggle span {
   width: 22px;
   height: 2px;
@@ -1108,7 +1099,7 @@ body {
   border-radius: 2px;
 }
 
-/* FULLSCREEN MENU */
+
 .mobile-menu {
   position: fixed;
   inset: 0;
@@ -1128,13 +1119,13 @@ body {
   z-index: 1999;
 }
 
-/* ACTIVE MENU */
+
 .mobile-menu.active {
   opacity: 1;
   visibility: visible;
 }
 
-/* CLOSE BUTTON */
+
 .close-menu {
   position: absolute;
   top: 24px;
@@ -1178,7 +1169,7 @@ body {
   transform: rotate(90deg);
 }
 
-/* MOBILE NAV */
+
 .mobile-nav {
   display: flex;
   flex-direction: column;
@@ -1228,7 +1219,7 @@ body {
 }
 
 
-/* TOP + BOTTOM ROWS */
+
 .problem-row,
 .solution {
 
@@ -1240,7 +1231,6 @@ body {
 }
 
 
-/* TEXT BLOCKS */
 .problem-text,
 .solution-text {
 
@@ -1250,7 +1240,7 @@ body {
 }
 
 
-/* LABELS */
+
 .problem-label,
 .solution-label {
 
@@ -1262,8 +1252,6 @@ body {
   letter-spacing: 1px;
 }
 
-
-/* HEADINGS */
 .problem-text h2,
 .solution h2 {
 
@@ -1277,7 +1265,6 @@ body {
 }
 
 
-/* BODY TEXT */
 .problem-body,
 .solution-body {
 
@@ -1288,8 +1275,6 @@ body {
   color: rgba(255,255,255,0.92);
 }
 
-
-/* RESPONSIVE GRID */
 .problem-grid,
 .solution-grid {
 
@@ -1304,7 +1289,6 @@ body {
 }
 
 
-/* CARD STYLING */
 .problem-item,
 .solution-item {
 
@@ -1325,7 +1309,6 @@ body {
 }
 
 
-/* HOVER */
 .problem-item:hover,
 .solution-item:hover {
 
@@ -1337,8 +1320,6 @@ body {
     0 12px 35px rgba(255,235,174,0.15);
 }
 
-
-/* ICONS */
 .icon img {
 
   width: clamp(70px, 8vw, 100px);
@@ -1347,7 +1328,6 @@ body {
 }
 
 
-/* CARD TITLES */
 .problem-icon-text,
 .solution-icon-text {
 
@@ -1363,7 +1343,6 @@ body {
 }
 
 
-/* CARD PARAGRAPHS */
 .problem-icon-mini,
 .solution-icon-mini {
 
@@ -1379,7 +1358,6 @@ body {
 }
 
 
-/* DIVIDER */
 .divider {
 
   width: 100%;
@@ -1403,7 +1381,6 @@ body {
 }
 
 
-/* TEXT */
 .payoff-text {
 
   max-width: 900px;
@@ -1434,7 +1411,6 @@ body {
 }
 
 
-/* GRID */
 .payoff-grid {
 
   margin-top: clamp(60px, 8vw, 100px);
@@ -1448,7 +1424,6 @@ body {
 }
 
 
-/* CARDS */
 .payoff-item {
 
   padding: 40px 24px;
@@ -1466,7 +1441,6 @@ body {
 }
 
 
-/* HOVER */
 .payoff-item:hover {
 
   transform: translateY(-8px);
@@ -1477,7 +1451,7 @@ body {
 }
 
 
-/* NUMBERS */
+
 .payoff-icon-no {
 
   font-size: clamp(36px, 5vw, 52px);
@@ -1490,7 +1464,7 @@ body {
 }
 
 
-/* TITLES */
+
 .payoff-icon-text {
 
   margin-top: 14px;
@@ -1505,7 +1479,7 @@ body {
 }
 
 
-/* PARAGRAPHS */
+
 .payoff-icon-mini {
 
   margin-top: 14px;
@@ -1520,7 +1494,7 @@ body {
 }
 
 
-/* BUTTON */
+
 .payoff-button {
 
   display: flex;
@@ -1566,14 +1540,14 @@ body {
     width: 100%;
   }
 
-  /* HERO (MOBILE IMPROVED) */
+
 .hero {
   height: 100vh;
-  min-height: 100svh; /* better for mobile browsers */
+  min-height: 100svh; 
   align-items: flex-end;
 }
 
-/* CONTENT */
+
 .hero-content {
   position: relative;
   z-index: 2;
@@ -1588,14 +1562,14 @@ body {
   color: white;
 }
 
-/* SMALL INTRO LINE */
+
 .hero-content p:first-of-type {
   font-size: 14px;
   letter-spacing: 0.5px;
   margin-bottom: 12px;
 }
 
-/* MAIN HEADING */
+
 .hero-content h1 {
   font-size: 32px;
   line-height: 1.2;
@@ -1604,14 +1578,14 @@ body {
   margin-bottom: 12px;
 }
 
-/* BODY TEXT */
+
 .hero-content p {
   font-size: 16px;
   line-height: 1.6;
   opacity: 0.9;
 }
 
-/* BUTTONS */
+
 .hero-buttons {
   margin-top: 18px;
   display: flex;
@@ -1619,7 +1593,7 @@ body {
   gap: 12px;
 }
 
-/* BUTTONS FULL WIDTH */
+
 .btn {
   width: 100%;
   text-align: center;

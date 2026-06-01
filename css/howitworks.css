@@ -1,8 +1,7 @@
 @font-face {
   font-family: 'DM Sans';
   src: url('../fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf') format('woff2');
-  /*font-weight: normal;
-  font-style: normal;*/
+
 }
 
 html {
@@ -29,7 +28,7 @@ html {
   z-index: 10;
 }
 
-/* LEFT */
+
 .logo {
   justify-self: start;
   display: flex;
@@ -44,9 +43,9 @@ html {
   transition: 0.2s;
 }
 
-/* IMAGE INSIDE LOGO */
+
 .logo img {
-  height: 28px;   /* adjust size as needed */
+  height: 28px;   
   width: auto;
   display: block;
   max-height: 100%;
@@ -57,7 +56,7 @@ html {
   color: black;
 }
 
-/* CENTER - THE "ONE LONG BUTTON" */
+
 .nav-pill {
   justify-self: center;
   display: flex;
@@ -66,11 +65,11 @@ html {
   padding: 8px 16px;
   border: 1px solid #FFEBAE;
   border-radius: 8px;
-  background: rgba(255,235,174,0.3); /* subtle glass look */
+  background: rgba(255,235,174,0.3); 
   backdrop-filter: blur(6px);
 }
 
-/* LINKS INSIDE PILL */
+
 .nav-pill a {
   text-decoration: none;
   color: black;
@@ -85,7 +84,7 @@ html {
   border-radius: 4px;
 }
 
-/* RIGHT */
+
 .cta-btn {
   background: rgba(255,235,174,0.3);
   justify-self: end;
@@ -116,7 +115,6 @@ html {
     align-items:start;
 }
 
-/* LEFT SIDE */
 .process-left{
     width:100%;
 }
@@ -187,7 +185,6 @@ html {
     line-height:1.4;
 }
 
-/* RIGHT IMAGE */
 .process-image{
     width:100%;
     height:100%;
@@ -218,8 +215,6 @@ html {
     padding-bottom: 70px;
 }
 
-/* WRAPPER */
-
 .slider-wrapper{
     position:relative;
     width:100%;
@@ -228,15 +223,12 @@ html {
     overflow:hidden;
 }
 
-/* SLIDES CONTAINER */
 
 .slides{
     display:flex;
     width:300%;
     transition:transform 1s cubic-bezier(.16,1,.3,1);
 }
-
-/* INDIVIDUAL SLIDE */
 
 .slide{
     width:33.3333%;
@@ -336,14 +328,10 @@ html {
     transform:translateY(-50%) scale(1.08);
 }
 
-/* LEFT */
-
 .slider-arrow.left{
     left:40px;
 }
 
-
-/* RIGHT */
 
 .slider-arrow.right{
     right:40px;
@@ -396,8 +384,6 @@ html {
 
 }
 
-/* BACKGROUND IMAGE */
-
 .last-mile-bg{
     position:absolute;
     inset:0;
@@ -410,7 +396,6 @@ html {
     z-index:1;
 }
 
-/* DARK OVERLAY */
 
 .last-mile-overlay{
     position:absolute;
@@ -418,8 +403,6 @@ html {
     background:rgba(0,0,0,0.72);
     z-index:2;
 }
-
-/* CONTENT */
 
 .last-mile-content{
     position:relative;
@@ -429,7 +412,6 @@ html {
     margin:auto;
 }
 
-/* HEADING */
 
 .last-mile-heading{
     max-width:900px;
@@ -451,7 +433,6 @@ html {
     font-weight:300;
 }
 
-/* CARDS */
 
 .benefit-grid{
     display:grid;
@@ -754,21 +735,21 @@ font-size: 16px;
     max-width: 100%;
   }
 
-  /* Brand stays strong but compact */
+
   .footer-brand {
     font-size: 18px;
   }
 
-  /* Stack text naturally (no forced single-line) */
+
   .footer-text,
   .footer-tagline {
     font-size: 12px;
     opacity: 0.65;
-    white-space: normal; /* important */
+    white-space: normal; 
     line-height: 1.4;
   }
 
-  /* Links become wrap-friendly row */
+
   .footer-links {
     flex-wrap: wrap;
     gap: 12px;
@@ -778,7 +759,6 @@ font-size: 16px;
     font-size: 13px;
   }
 
-  /* CTA becomes full-width pill (feels premium on mobile) */
   .footer-cta {
     width: 100%;
   }
@@ -903,7 +883,6 @@ font-size: 17px;
 line-height: 1.6;
 }
 
-/* SLIDER ARROWS */
 
 .slider-arrow {
 width: 56px;
@@ -920,7 +899,6 @@ left: -5px;
 right: -5px;
 }
 
-/* DOTS */
 
 .slider-dots {
 margin-top: 40px;
@@ -962,7 +940,6 @@ line-height: 1.6;
    MOBILE + TABLET BURGER MENU ONLY
 ========================================================= */
 
-/* HIDDEN ON DESKTOP */
 .menu-toggle,
 .mobile-menu {
   display: none;
@@ -975,13 +952,11 @@ line-height: 1.6;
 
 @media (max-width: 1024px) {
 
-/* HIDE DESKTOP NAV */
 .nav-pill,
 .cta-btn {
   display: none;
 }
 
-/* KEEP NAVBAR CLEAN */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -990,7 +965,6 @@ line-height: 1.6;
   padding: 20px 24px;
 }
 
-/* SHOW BURGER */
 .menu-toggle {
   position: fixed;
   top: 20px;
@@ -1015,7 +989,7 @@ line-height: 1.6;
   z-index: 2000;
 }
 
-/* BURGER LINES */
+
 .menu-toggle span {
   width: 22px;
   height: 2px;
@@ -1024,7 +998,7 @@ line-height: 1.6;
   border-radius: 2px;
 }
 
-/* FULLSCREEN MENU */
+
 .mobile-menu {
   position: fixed;
   inset: 0;
@@ -1044,13 +1018,11 @@ line-height: 1.6;
   z-index: 1999;
 }
 
-/* ACTIVE MENU */
 .mobile-menu.active {
   opacity: 1;
   visibility: visible;
 }
 
-/* CLOSE BUTTON */
 .close-menu {
   position: absolute;
   top: 24px;
@@ -1094,7 +1066,6 @@ line-height: 1.6;
   transform: rotate(90deg);
 }
 
-/* MOBILE NAV */
 .mobile-nav {
   display: flex;
   flex-direction: column;
@@ -1137,7 +1108,6 @@ line-height: 1.6;
   transform: translateY(0);
 }
 
-/* DIFFERENT DELAYS */
 
 .delay-1 {
   transition-delay: 0.1s;

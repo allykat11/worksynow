@@ -34,7 +34,7 @@ body {
   #fff;
 }
 
-/* nicer selection highlight */
+
 ::selection {
   background: #FFEBAE;
   color: #111;
@@ -60,7 +60,7 @@ body {
   z-index: 10;
 }
 
-/* LEFT */
+
 .logo {
   justify-self: start;
   display: flex;
@@ -75,9 +75,9 @@ body {
   transition: 0.2s;
 }
 
-/* IMAGE INSIDE LOGO */
+
 .logo img {
-  height: 28px;   /* adjust size as needed */
+  height: 28px;   
   width: auto;
   display: block;
   max-height: 100%;
@@ -88,7 +88,7 @@ body {
   color: black;
 }
 
-/* CENTER - THE "ONE LONG BUTTON" */
+
 .nav-pill {
   justify-self: center;
   display: flex;
@@ -97,11 +97,11 @@ body {
   padding: 8px 16px;
   border: 1px solid #FFEBAE;
   border-radius: 8px;
-  background: rgba(255,235,174,0.3); /* subtle glass look */
+  background: rgba(255,235,174,0.3); 
   backdrop-filter: blur(6px);
 }
 
-/* LINKS INSIDE PILL */
+
 .nav-pill a {
   text-decoration: none;
   color: black;
@@ -116,7 +116,7 @@ body {
   border-radius: 4px;
 }
 
-/* RIGHT */
+
 .cta-btn {
   background: rgba(255,235,174,0.3);
   justify-self: end;
@@ -173,7 +173,7 @@ body {
   font-weight: 300;
   line-height: 1.05;
   letter-spacing: -1.5px;
-  margin-bottom: 18px; /* was ~28px */
+  margin-bottom: 18px; 
   max-width: 520px;
 }
 
@@ -181,19 +181,19 @@ body {
   font-size: 20px;
   line-height: 1.6;
   opacity: 0.75;
-  margin-bottom: 10px; /* was ~90px (this is the big spacing issue) */
+  margin-bottom: 10px; 
   max-width: 480px;
 }
 
 .contact-info-block a {
-  color: #111;          /* black */
+  color: #111; 
   text-decoration: none;
   transition: 0.2s ease;
 }
 
 .contact-info-block a:hover {
   color: #000;
-  text-decoration: underline; /* optional but nice for UX */
+  text-decoration: underline; 
 }
 
 .contact-info-block {
@@ -308,7 +308,6 @@ body {
   color:#9a9a9a;
 }
 
-/* BUTTON */
 
 .submit-btn{
   width:100%;
@@ -369,7 +368,6 @@ body {
   align-items:flex-start;
 }
 
-/* LEFT TITLE */
 
 .newsletter-title{
   font-size:58px;
@@ -379,7 +377,6 @@ body {
   margin-top:10px;
 }
 
-/* SUBSCRIBE BOX */
 
 .subscribe-box{
   width:100%;
@@ -401,7 +398,6 @@ body {
   max-width:620px;
 }
 
-/* SUBSCRIBE FORM */
 
 .subscribe-form{
   display:flex;
@@ -459,7 +455,7 @@ body {
   max-width: 1400px;
   margin: auto;
 
-  flex-wrap: wrap; /* keeps it responsive */
+  flex-wrap: wrap; 
 }
 
 .footer-brand {
@@ -524,7 +520,6 @@ body {
   transform: translateY(0);
 }
 
-/* STAGGER DELAYS */
 
 .delay-1 {
   transition-delay: 0.1s;
@@ -642,7 +637,6 @@ body {
   display: none;
 }
 
-/* KEEP NAVBAR CLEAN */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -651,7 +645,6 @@ body {
   padding: 20px 24px;
 }
 
-/* SHOW BURGER */
 .menu-toggle {
   position: fixed;
   top: 20px;
@@ -676,7 +669,6 @@ body {
   z-index: 2000;
 }
 
-/* BURGER LINES */
 .menu-toggle span {
   width: 22px;
   height: 2px;
@@ -685,7 +677,6 @@ body {
   border-radius: 2px;
 }
 
-/* FULLSCREEN MENU */
 .mobile-menu {
   position: fixed;
   inset: 0;
@@ -705,13 +696,11 @@ body {
   z-index: 1999;
 }
 
-/* ACTIVE MENU */
 .mobile-menu.active {
   opacity: 1;
   visibility: visible;
 }
 
-/* CLOSE BUTTON */
 .close-menu {
   position: absolute;
   top: 24px;
@@ -755,7 +744,6 @@ body {
   transform: rotate(90deg);
 }
 
-/* MOBILE NAV */
 .mobile-nav {
   display: flex;
   flex-direction: column;
@@ -815,7 +803,6 @@ body {
     line-height: 1.1;
   }
 
-  /* The subscribe box itself */
   .subscribe-box {
     width: 100%;
     max-width: 100%;
@@ -829,7 +816,6 @@ body {
     margin-bottom: 20px;
   }
 
-  /* STACK FORM (important change) */
   .subscribe-form {
     flex-direction: column;
     gap: 12px;
@@ -837,11 +823,11 @@ body {
 
 .subscribe-form input {
   flex: 1;
-  height: 68px;          /* was 58px */
+  height: 68px;         
   border: none;
   background: #d9d9d9;
-  padding: 0 22px;       /* more breathing room */
-  font-size: 16px;       /* bigger text */
+  padding: 0 22px;    
+  font-size: 16px;      
   font-family: 'Inter', sans-serif;
   outline: none;
   padding: 10px;
@@ -885,21 +871,21 @@ body {
     max-width: 100%;
   }
 
-  /* Brand stays strong but compact */
+
   .footer-brand {
     font-size: 18px;
   }
 
-  /* Stack text naturally (no forced single-line) */
+
   .footer-text,
   .footer-tagline {
     font-size: 12px;
     opacity: 0.65;
-    white-space: normal; /* important */
+    white-space: normal; 
     line-height: 1.4;
   }
 
-  /* Links become wrap-friendly row */
+
   .footer-links {
     flex-wrap: wrap;
     gap: 12px;
@@ -909,7 +895,7 @@ body {
     font-size: 13px;
   }
 
-  /* CTA becomes full-width pill (feels premium on mobile) */
+
   .footer-cta {
     width: 100%;
   }

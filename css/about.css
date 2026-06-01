@@ -1,8 +1,7 @@
 @font-face {
   font-family: 'DM Sans';
   src: url('../fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf') format('woff2');
-  /*font-weight: normal;
-  font-style: normal;*/
+
 }
 
 html{
@@ -35,7 +34,7 @@ html{
   z-index: 10;
 }
 
-/* LEFT */
+
 .logo {
   justify-self: start;
   display: flex;
@@ -50,9 +49,9 @@ html{
   transition: 0.2s;
 }
 
-/* IMAGE INSIDE LOGO */
+
 .logo img {
-  height: 28px;   /* adjust size as needed */
+  height: 28px;   
   width: auto;
   display: block;
   max-height: 100%;
@@ -63,7 +62,7 @@ html{
   color: black;
 }
 
-/* CENTER - THE "ONE LONG BUTTON" */
+
 .nav-pill {
   justify-self: center;
   display: flex;
@@ -72,11 +71,11 @@ html{
   padding: 8px 16px;
   border: 1px solid #FFEBAE;
   border-radius: 8px;
-  background: rgba(255,235,174,0.3); /* subtle glass look */
+  background: rgba(255,235,174,0.3); 
   backdrop-filter: blur(6px);
 }
 
-/* LINKS INSIDE PILL */
+
 .nav-pill a {
   text-decoration: none;
   color: #FFEBAE;
@@ -91,7 +90,7 @@ html{
   border-radius: 4px;
 }
 
-/* RIGHT */
+
 .cta-btn {
   background: rgba(255,235,174,0.3);
   justify-self: end;
@@ -142,7 +141,6 @@ html{
   transform:scale(1.1);
 }
 
-/* BACKGROUND IMAGE */
 
 .what-we-do-bg{
   position:absolute;
@@ -162,7 +160,7 @@ html{
   will-change: transform;
 }
 
-/* DARK OVERLAY */
+
 
 .what-we-do-overlay{
   position:absolute;
@@ -171,7 +169,7 @@ html{
   z-index:2;
 }
 
-/* CONTENT */
+
 
 .what-we-do-content{
   position:relative;
@@ -182,7 +180,7 @@ html{
   will-change: transform;
 }
 
-/* TOP GRID */
+
 
 .top-grid{
   display:grid;
@@ -216,7 +214,7 @@ html{
   margin-bottom:0;
 }
 
-/* DIVIDER */
+
 
 .divider{
   width:100%;
@@ -226,7 +224,7 @@ html{
   margin-bottom:90px;
 }
 
-/* BOTTOM GRID */
+
 
 .bottom-grid{
   display:grid;
@@ -280,7 +278,7 @@ html{
   max-width:1100px;
 }
 
-/* TITLE */
+
 
 .contact-title{
   font-size:48px;
@@ -290,7 +288,6 @@ html{
   color:white;
 }
 
-/* TEXT BLOCKS */
 
 .contact-block{
   max-width:1600px;
@@ -309,7 +306,7 @@ html{
       letter-spacing:-0.2px;
     }
 
-    /* LINKS */
+
 
     .contact-block a{
       color:white;
@@ -337,7 +334,7 @@ html{
   max-width: 1400px;
   margin: auto;
 
-  flex-wrap: wrap; /* keeps it responsive */
+  flex-wrap: wrap; 
 }
 
 .footer-brand {
@@ -604,13 +601,13 @@ html{
 
 @media (max-width: 1024px) {
 
-/* HIDE DESKTOP NAV */
+
 .nav-pill,
 .cta-btn {
   display: none;
 }
 
-/* KEEP NAVBAR CLEAN */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -619,7 +616,7 @@ html{
   padding: 20px 24px;
 }
 
-/* SHOW BURGER */
+
 .menu-toggle {
   position: fixed;
   top: 20px;
@@ -644,7 +641,7 @@ html{
   z-index: 2000;
 }
 
-/* BURGER LINES */
+
 .menu-toggle span {
   width: 22px;
   height: 2px;
@@ -653,7 +650,7 @@ html{
   border-radius: 2px;
 }
 
-/* FULLSCREEN MENU */
+
 .mobile-menu {
   position: fixed;
   inset: 0;
@@ -673,13 +670,12 @@ html{
   z-index: 1999;
 }
 
-/* ACTIVE MENU */
+
 .mobile-menu.active {
   opacity: 1;
   visibility: visible;
 }
 
-/* CLOSE BUTTON */
 .close-menu {
   position: absolute;
   top: 24px;
@@ -723,7 +719,7 @@ html{
   transform: rotate(90deg);
 }
 
-/* MOBILE NAV */
+
 .mobile-nav {
   display: flex;
   flex-direction: column;
@@ -758,21 +754,21 @@ html{
     max-width: 100%;
   }
 
-  /* Brand stays strong but compact */
+
   .footer-brand {
     font-size: 18px;
   }
 
-  /* Stack text naturally (no forced single-line) */
+ 
   .footer-text,
   .footer-tagline {
     font-size: 12px;
     opacity: 0.65;
-    white-space: normal; /* important */
+    white-space: normal; 
     line-height: 1.4;
   }
 
-  /* Links become wrap-friendly row */
+
   .footer-links {
     flex-wrap: wrap;
     gap: 12px;
@@ -782,7 +778,7 @@ html{
     font-size: 13px;
   }
 
-  /* CTA becomes full-width pill (feels premium on mobile) */
+
   .footer-cta {
     width: 100%;
   }
