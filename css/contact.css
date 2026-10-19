@@ -1012,8 +1012,8 @@ body {
   padding: 40px 32px;
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.08);
   backdrop-filter: blur(14px);
-  position: sticky;
-  top: 100px;
+  position: static;
+  top: auto;
   transition: transform 0.45s ease, box-shadow 0.45s ease;
 }
 
