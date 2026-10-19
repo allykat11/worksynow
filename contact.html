@@ -90,91 +90,35 @@
 
     <!-- RIGHT FORM -->
 
-    <div class="contact-form-box reveal delay-3">
+    <!-- RIGHT SIDE: CALENDLY BOOKING -->
 
-      <h2 class="reveal">Contact Us</h2>
+    <div class="calendly-box reveal delay-3">
 
-      <p class="form-intro reveal delay-1">
-        Get in touch with us for any enquiries
-        and questions
+      <h2>Let's talk.</h2>
+
+      <p class="calendly-intro">
+        Book a time with our team to chat about Worksy,
+        explore how it works, or discuss how we can help
+        your organisation.
       </p>
 
-      <!-- FORM -->
+      <!-- CALENDLY EMBED -->
 
-      <!-- 
-        Replace YOUR_EMAIL@example.com
-        with your real email address
-      -->
-
-      <form
-        class="contact-form"
-        action="https://formsubmit.co/YOUR_EMAIL@example.com"
-        method="POST"
-      >
-
-        <!-- OPTIONAL SETTINGS -->
-
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_subject" value="New Contact Form Submission">
-
-        <div class="form-group">
-
-          <label>Your Name</label>
-
-          <input
-            type="text"
-            name="name"
-            required
-          >
-
-        </div>
-
-        <div class="form-group">
-
-          <label>Email Address</label>
-
-          <input
-            type="email"
-            name="email"
-            required
-          >
-
-        </div>
-
-        <div class="form-group">
-
-          <label>Company</label>
-
-          <input
-            type="text"
-            name="company"
-          >
-
-        </div>
-
-        <div class="form-group">
-
-          <label>Message</label>
-
-          <textarea
-            name="message"
-            placeholder="How can we help you?"
-            required
-          ></textarea>
-
-        </div>
-
-        <button type="submit" class="submit-btn">
-          Send Message!
-        </button>
-
-      </form>
+      <div
+        class="calendly-inline-widget"
+        data-url="https://calendly.com/YOUR-USERNAME/YOUR-EVENT?hide_gdpr_banner=1"
+        style="min-width: 280px; height: 650px;"
+      ></div>
 
     </div>
 
-  </div>
+    <!-- LOAD CALENDLY WIDGET -->
 
-</section>
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      async
+      type="text/javascript">
+    </script>
 
 <!-- ====================================
      NEWSLETTER SECTION

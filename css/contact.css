@@ -997,3 +997,107 @@ body {
   }
 
 }
+
+
+/* =========================
+   CALENDLY BOOKING BOX
+========================== */
+
+.calendly-box {
+  width: 100%;
+  min-width: 0;
+  background: rgba(234, 219, 157, 0.75);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 18px;
+  padding: 40px 32px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(14px);
+  position: sticky;
+  top: 100px;
+  transition: transform 0.45s ease, box-shadow 0.45s ease;
+}
+
+.calendly-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+}
+
+.calendly-box h2 {
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  margin-bottom: 18px;
+  color: #111;
+}
+
+.calendly-intro {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.75;
+  margin-bottom: 24px;
+}
+
+.calendly-box .calendly-inline-widget {
+  width: 100%;
+  min-width: 0;
+  height: 650px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* DESKTOP SPLIT LAYOUT */
+
+@media (min-width: 1025px) {
+  .contact-layout {
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+  }
+
+  .contact-layout::before {
+    left: 50%;
+  }
+}
+
+/* TABLET */
+
+@media (max-width: 1024px) {
+  .calendly-box {
+    position: relative;
+    top: auto;
+    padding: 36px 28px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .calendly-box {
+    padding: 28px 18px;
+  }
+
+  .calendly-box h2 {
+    font-size: 32px;
+  }
+
+  .calendly-intro {
+    font-size: 16px;
+  }
+
+  .calendly-box .calendly-inline-widget {
+    height: 700px;
+  }
+}
+
+@media (max-width: 480px) {
+  .calendly-box {
+    padding: 24px 12px;
+  }
+
+  .calendly-box h2 {
+    font-size: 28px;
+  }
+
+  .calendly-box .calendly-inline-widget {
+    height: 720px;
+  }
+}
