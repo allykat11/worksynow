@@ -1184,3 +1184,61 @@ body {
   }
 }
 
+
+
+/* CONTACT PAGE LAYOUT FIX */
+
+/* Keep the contact content in two columns */
+.contact-layout {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 48px;
+  width: 100%;
+}
+
+/* Keep Calendly in the normal document flow */
+.calendly-box {
+  position: static !important;
+  top: auto !important;
+  align-self: start;
+  width: 100%;
+  min-width: 0;
+  transform: none !important;
+}
+
+/* Newsletter must sit BELOW the contact columns */
+.newsletter-section {
+  display: block !important;
+  position: relative !important;
+  float: none !important;
+  clear: both;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  margin: 60px 0 0 !important;
+  transform: none;
+}
+
+/* Footer must sit BELOW the newsletter */
+footer,
+.site-footer,
+#shopify-section-footer {
+  position: relative;
+  clear: both;
+  float: none;
+  width: 100%;
+  margin-top: 0;
+}
+
+/* Tablet and mobile */
+@media (max-width: 768px) {
+  .contact-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .newsletter-section {
+    margin-top: 40px !important;
+  }
+}
