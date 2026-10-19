@@ -1004,28 +1004,38 @@ body {
 ========================== */
 
 .calendly-box {
+  position: static !important;
+  top: auto !important;
+  align-self: start;
+
   width: 100%;
   min-width: 0;
+  height: auto;
+  margin: 0;
+
   background: rgba(234, 219, 157, 0.75);
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 18px;
   padding: 40px 32px;
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.08);
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
   backdrop-filter: blur(14px);
-  position: static;
-  top: auto;
-  transition: transform 0.45s ease, box-shadow 0.45s ease;
+
+  /* No floating or movement */
+  transform: none !important;
+  transition: box-shadow 0.3s ease;
 }
 
 .calendly-box:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+  transform: none !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
 }
 
 .calendly-box h2 {
   font-size: 40px;
   font-weight: 300;
   letter-spacing: -1px;
+  line-height: 1.15;
   margin-bottom: 18px;
   color: #111;
 }
@@ -1037,42 +1047,101 @@ body {
   margin-bottom: 24px;
 }
 
+/* Calendly iframe container */
+
 .calendly-box .calendly-inline-widget {
+  display: block;
+  position: relative !important;
+
   width: 100%;
   min-width: 0;
   height: 650px;
-  border-radius: 8px;
+  margin: 0;
+  padding: 0;
+
   overflow: hidden;
+  border-radius: 8px;
 }
 
-/* DESKTOP SPLIT LAYOUT */
+/* Keep the contact section separate from the newsletter */
 
-@media (min-width: 1025px) {
+.contact-page {
+  position: relative;
+  display: flow-root;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  margin-bottom: 0;
+}
+
+.contact-layout {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 64px;
+
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Desktop divider */
+
+.contact-layout::before {
+  left: 50%;
+}
+
+/* Newsletter must remain in normal page flow */
+
+.newsletter-section {
+  position: relative;
+  display: flex;
+  clear: both;
+
+  width: 100%;
+  height: auto;
+  min-height: 650px;
+
+  margin-top: 0;
+  z-index: 0;
+}
+
+/* =========================
+   TABLET
+========================== */
+
+@media (max-width: 1024px) {
   .contact-layout {
-    grid-template-columns: 1fr 1fr;
-    gap: 64px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 40px;
   }
 
   .contact-layout::before {
-    left: 50%;
+    display: none;
   }
-}
 
-/* TABLET */
-
-@media (max-width: 1024px) {
   .calendly-box {
-    position: relative;
-    top: auto;
+    position: static !important;
+    width: 100%;
     padding: 36px 28px;
   }
+
+  .calendly-box .calendly-inline-widget {
+    height: 700px;
+  }
 }
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================== */
 
 @media (max-width: 768px) {
   .calendly-box {
+    position: static !important;
     padding: 28px 18px;
+    border-radius: 14px;
   }
 
   .calendly-box h2 {
@@ -1084,9 +1153,22 @@ body {
   }
 
   .calendly-box .calendly-inline-widget {
-    height: 700px;
+    height: 720px;
+  }
+
+  .contact-page {
+    padding-bottom: 60px;
+  }
+
+  .newsletter-section {
+    min-height: 0;
+    padding: 60px 20px;
   }
 }
+
+/* =========================
+   SMALL MOBILE
+========================== */
 
 @media (max-width: 480px) {
   .calendly-box {
@@ -1098,6 +1180,7 @@ body {
   }
 
   .calendly-box .calendly-inline-widget {
-    height: 720px;
+    height: 740px;
   }
 }
+
